@@ -20,4 +20,4 @@ Please create the four button components in the figma design:
 - Tertiary
 - Add To Cart
 
-### Please push it to a new github repo of your own
+## When you are finished, please push it to a new github repo
