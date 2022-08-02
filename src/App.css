@@ -36,3 +36,162 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: FoundersGrotesk;
+  font-style: normal;
+  font-weight: 300;
+  src: local("FoundersGrotesk-Light"), local("FoundersGrotesk Light"),
+    url("../public/fonts/FoundersGrotesk-Light.woff2") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: FoundersGrotesk-Regular;
+  font-style: normal;
+  font-weight: 500;
+  src: local("FoundersGrotesk-Regular"), local("FoundersGrotesk Regular"),
+    url("../public/fonts/FoundersGrotesk-Regular.woff2") format("opentype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "freight-big-pro";
+  src: url("https://use.typekit.net/af/8de680/0000000000000000000132c1/27/l?subset_id=2&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/8de680/0000000000000000000132c1/27/d?subset_id=2&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/8de680/0000000000000000000132c1/27/a?subset_id=2&fvd=n7&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "freight-big-pro";
+  src: url("https://use.typekit.net/af/486b15/0000000000000000000132c2/27/l?subset_id=2&fvd=i7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/486b15/0000000000000000000132c2/27/d?subset_id=2&fvd=i7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/486b15/0000000000000000000132c2/27/a?subset_id=2&fvd=i7&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "freight-big-pro";
+  src: url("https://use.typekit.net/af/ca7ae5/0000000000000000000132c3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/ca7ae5/0000000000000000000132c3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/ca7ae5/0000000000000000000132c3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "freight-big-pro";
+  src: url("https://use.typekit.net/af/0203fc/0000000000000000000132c4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/0203fc/0000000000000000000132c4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/0203fc/0000000000000000000132c4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "freight-big-pro";
+  src: url("https://use.typekit.net/af/daa52e/0000000000000000000132c5/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/daa52e/0000000000000000000132c5/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/daa52e/0000000000000000000132c5/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "freight-big-pro";
+  src: url("https://use.typekit.net/af/8054ef/0000000000000000000132c6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/8054ef/0000000000000000000132c6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/8054ef/0000000000000000000132c6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "freight-big-pro";
+  src: url("https://use.typekit.net/af/dcfc24/0000000000000000000132c7/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/dcfc24/0000000000000000000132c7/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/dcfc24/0000000000000000000132c7/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "freight-big-pro";
+  src: url("https://use.typekit.net/af/ab011c/0000000000000000000132c8/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/ab011c/0000000000000000000132c8/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/ab011c/0000000000000000000132c8/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i5&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* @font-face {
+  font-family:"freight-display-pro";
+  src:url("https://use.typekit.net/af/6f4412/0000000000000000000132cd/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/6f4412/0000000000000000000132cd/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/6f4412/0000000000000000000132cd/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-display:swap;font-style:normal;font-weight:700;
+} */
+
+/* @font-face {
+  font-family:"freight-display-pro";
+  src:url("https://use.typekit.net/af/aa7769/0000000000000000000132ce/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/aa7769/0000000000000000000132ce/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/aa7769/0000000000000000000132ce/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+  font-display:swap;font-style:italic;font-weight:700;
+} */
+
+@font-face {
+  font-family: "freight-display-pro";
+  src: url("https://use.typekit.net/af/f15774/0000000000000000000132cf/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/f15774/0000000000000000000132cf/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/f15774/0000000000000000000132cf/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "freight-display-pro";
+  src: url("https://use.typekit.net/af/51f389/0000000000000000000132d0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/51f389/0000000000000000000132d0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/51f389/0000000000000000000132d0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+      format("opentype");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 300;
+}
