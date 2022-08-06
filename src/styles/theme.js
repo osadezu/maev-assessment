@@ -7,6 +7,7 @@ export const tokens = {
     accent03: '#cee0eb',
     textPrimary: '#353535',
     textSecondary: '#ffffff',
+    textAccent: '#0E6966',
   },
   typography: {
     fontSizes: [12, 14, 16, 18, 22, 32, 35, 42, 44, 50, 52, 60, 64, 100],
@@ -58,8 +59,6 @@ export const buttonTheme = {
     color: tokens.colors.textPrimary,
     fontFamily: tokens.typography.fonts.headingPrimary,
     fontSize: [tokens.typography.fontSizes[2], tokens.typography.fontSizes[3]],
-    height: '60px',
-    width: '100%',
     '&:hover': {
       bg: tokens.colors.accent02,
       border: `1px solid ${tokens.colors.textSecondary}`,
@@ -69,15 +68,19 @@ export const buttonTheme = {
   tertiary: {
     border: 0,
     borderRadius: '0',
+    padding: 'unset',
     bg: tokens.colors.backgroundPrimary,
     color: tokens.colors.textPrimary,
     textDecoration: 'underline',
-    textUnderlineOffset: '3px',
+    textUnderlineOffset: '4px',
+    height: 'unset',
+    width: 'initial',
     '&:not(:disabled)': {
       '&:hover': {
         bg: tokens.colors.backgroundPrimary,
         border: 0,
-        color: tokens.colors.textPrimary,
+        borderColor: tokens.colors.textAccent,
+        color: tokens.colors.textAccent,
         cursor: 'pointer',
       },
     },

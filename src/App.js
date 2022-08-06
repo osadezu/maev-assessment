@@ -5,6 +5,7 @@ import { theme } from './styles/theme';
 import { PrimaryHeader } from './components/Text';
 import { PrimaryButton } from './components/buttons/PrimaryButton';
 import { SecondaryButton } from './components/buttons/SecondaryButton';
+import { TertiaryButton } from './components/buttons/TertiaryButton';
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
             </Box>
             <Box my={2} sx={{ width: '300px' }}>
               <SecondaryButton>Secondary Button</SecondaryButton>
+            </Box>
+            <Box my={2} sx={{ width: '300px', textAlign: 'center' }}>
+              <TertiaryButton>See Details</TertiaryButton>
             </Box>
           </Frame>
         </Flex>
