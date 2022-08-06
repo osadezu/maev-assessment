@@ -1,12 +1,12 @@
 export const tokens = {
   colors: {
-    backgroundPrimary: "#ffffff",
-    backgroundSecondary: "#353535",
-    accent01: "#e5ff00",
-    accent02: "#11837F",
-    accent03: "#cee0eb",
-    textPrimary: "#353535",
-    textSecondary: "#ffffff",
+    backgroundPrimary: '#ffffff',
+    backgroundSecondary: '#353535',
+    accent01: '#e5ff00',
+    accent02: '#11837F',
+    accent03: '#cee0eb',
+    textPrimary: '#353535',
+    textSecondary: '#ffffff',
   },
   typography: {
     fontSizes: [12, 14, 16, 18, 22, 32, 35, 42, 44, 50, 52, 60, 64, 100],
@@ -31,71 +31,74 @@ export const buttonTheme = {
     bg: tokens.colors.accent01,
     color: tokens.colors.textPrimary,
     fontFamily: tokens.typography.fonts.headingPrimary,
-    fontSize: [tokens.typography.fontSizes[2],tokens.typography.fontSizes[3]],
+    fontSize: [tokens.typography.fontSizes[2], tokens.typography.fontSizes[3]],
     border: `1px solid ${tokens.colors.backgroundSecondary}`,
-    borderRadius: "0px",
-    "&:not(:disabled)":{
-      "&:hover": {
+    borderRadius: '0px',
+    '&:not(:disabled)': {
+      '&:hover': {
         bg: tokens.colors.accent02,
         border: `1px solid ${tokens.colors.backgroundPrimary}`,
         color: tokens.colors.textSecondary,
-      }
+        cursor: 'pointer',
+      },
     },
-    "&:disabled": {
+    '&:disabled': {
       bg: 'grey',
       cursor: 'default',
-      color: 'initial'
-    }
+      color: 'initial',
+    },
   },
   secondary: {
     bg: tokens.colors.backgroundPrimary,
     borderColor: tokens.colors.backgroundSecondary,
-    borderWidth: "1px",
-    borderStyle: "solid",
+    borderWidth: '1px',
+    borderStyle: 'solid',
     color: tokens.colors.textPrimary,
     fontFamily: tokens.typography.fonts.headingPrimary,
-    fontSize: [tokens.typography.fontSizes[2],tokens.typography.fontSizes[3]],
-    "&:hover": {
+    fontSize: [tokens.typography.fontSizes[2], tokens.typography.fontSizes[3]],
+    '&:hover': {
       bg: tokens.colors.accent02,
       border: `1px solid ${tokens.colors.textSecondary}`,
+      cursor: 'pointer',
     },
   },
   tertiary: {
     border: 0,
-    borderRadius: "0",
+    borderRadius: '0',
     bg: tokens.colors.backgroundPrimary,
     color: tokens.colors.textPrimary,
-    textDecoration: "underline",
+    textDecoration: 'underline',
     textUnderlineOffset: '3px',
-    "&:not(:disabled)":{
-      "&:hover": {
+    '&:not(:disabled)': {
+      '&:hover': {
         bg: tokens.colors.backgroundPrimary,
         border: 0,
         color: tokens.colors.textPrimary,
-      }
+        cursor: 'pointer',
+      },
     },
   },
   tabs: {
-    variant: "buttons.tertiary",
+    variant: 'buttons.tertiary',
     fontSize: [0, 1],
-    textDecoration: "none",
-    borderBottom: "3px solid",
+    textDecoration: 'none',
+    borderBottom: '3px solid',
     borderColor: tokens.colors.textPrimary,
     opacity: 0.4,
-    "&.active": {
+    '&.active': {
       opacity: 1,
     },
-    "&:hover": {
+    '&:hover': {
       bg: tokens.colors.backgroundPrimary,
       color: tokens.colors.textPrimary,
-      opacity: 1
+      opacity: 1,
     },
   },
 };
 
 const headingTheme = {
   default: {
-    letterSpacing: "-2px",
+    letterSpacing: '-2px',
   },
   heading1: {
     primary: {
@@ -105,7 +108,7 @@ const headingTheme = {
     secondary: {
       fontFamily: tokens.typography.fonts.headingSecondary,
       fontWeight: tokens.typography.fontWeights.light,
-      fontStyle: "italic",
+      fontStyle: 'italic',
     },
   },
   heading2: {
@@ -116,7 +119,7 @@ const headingTheme = {
     secondary: {
       fontFamily: tokens.typography.fonts.headingSecondary,
       fontWeight: tokens.typography.fontWeights.regular,
-      fontStyle: "italic",
+      fontStyle: 'italic',
     },
   },
   heading3: {
@@ -131,7 +134,7 @@ const textTheme = {
   bodyPrimary: {
     fontFamily: tokens.typography.fonts.bodyPrimary,
     fontWeight: tokens.typography.fontWeights.light,
-    letterSpacing: "0px",
+    letterSpacing: '0px',
   },
   bodySecondary: {
     fontFamily: [
@@ -140,27 +143,27 @@ const textTheme = {
       tokens.typography.fonts.bodyPrimary,
     ],
     fontWeight: tokens.typography.fontWeights.regular,
-    letterSpacing: "0px",
+    letterSpacing: '0px',
   },
   bodyDirectional: {
     fontFamily: tokens.typography.fonts.bodyPrimary,
     fontWeight: tokens.typography.fontWeights.light,
-    letterSpacing: "0px",
+    letterSpacing: '0px',
   },
   bodyEyebrow: {
-    textTransform: "uppercase",
+    textTransform: 'uppercase',
     fontFamily: tokens.typography.fonts.bodyPrimary,
     fontWeight: tokens.typography.fontWeights.light,
-    letterSpacing: "0px",
+    letterSpacing: '0px',
   },
 };
 
 const checkboxTheme = {
   fill: tokens.colors.backgroundSecondary,
-  "&:hover": {
+  '&:hover': {
     fill: tokens.colors.accent02,
   },
-  "input:checked ~ &": {
+  'input:checked ~ &': {
     fill: tokens.colors.accent02,
   },
 };
@@ -168,10 +171,10 @@ const checkboxTheme = {
 const inputTheme = {
   fontFamily: tokens.typography.fonts.primary,
   fontSize: tokens.typography.fontSizes[3],
-  borderRadius: "0",
+  borderRadius: '0',
   // border: "none",
-  "&:focus-visible": {
-    outline: "none",
+  '&:focus-visible': {
+    outline: 'none',
   },
 };
 
