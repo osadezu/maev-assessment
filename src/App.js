@@ -6,8 +6,15 @@ import { PrimaryHeader } from './components/Text';
 import { PrimaryButton } from './components/buttons/PrimaryButton';
 import { SecondaryButton } from './components/buttons/SecondaryButton';
 import { TertiaryButton } from './components/buttons/TertiaryButton';
+import { AddToCartButton } from './components/buttons/AddToCartButton';
 
 function App() {
+  // Placeholder data to test Add To Cart button
+  const sampleItem = {
+    price: 149.0,
+    periodWeeks: 4,
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <Flex
@@ -32,8 +39,11 @@ function App() {
             <Box my={2} sx={{ width: '300px' }}>
               <SecondaryButton>Secondary Button</SecondaryButton>
             </Box>
-            <Box my={2} sx={{ width: '300px', textAlign: 'center' }}>
+            <Box my={3} sx={{ width: '300px', textAlign: 'center' }}>
               <TertiaryButton>See Details</TertiaryButton>
+            </Box>
+            <Box my={2} sx={{ width: '450px' }}>
+              <AddToCartButton item={sampleItem} />
             </Box>
           </Frame>
         </Flex>
