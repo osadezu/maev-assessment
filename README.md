@@ -5,6 +5,7 @@ Candidate: Oscar Sánchez de Zulueta
 ## Notes on my implementation
 
 - Some design parameters are assumed to apply to all buttons in the project, those changes were made directly in the theme.js dictionaries. Other component-specific parameters are inlined as sx attributes.
+- The default button width was defined as 100% of parent, which seems to be the case in meetmaev.com
 - The arrow icon was inserted as inline SVG for simplicity. This should be ok for a few isolated graphics, but if many different graphics are needed we could use SVGR to load SVG files directly. This might require CRA/webpack config changes to the project.
 - In the Figma document, the Primary button default state does not appear to perfectly center the text + arrow on the width of the button. However, other buttons do, so even spacing on both sides is assumed as the general intent.
 - An arbitrary margin was added to the text container in some cases to visually center the text vertically.
