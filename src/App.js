@@ -1,9 +1,10 @@
 import './App.css';
-import { Box, Button, Flex, ThemeProvider } from 'theme-ui';
+import { Box, Flex, ThemeProvider } from 'theme-ui';
 import { Frame } from './components/Frame';
 import { theme } from './styles/theme';
 import { PrimaryHeader } from './components/Text';
 import { PrimaryButton } from './components/buttons/PrimaryButton';
+import { SecondaryButton } from './components/buttons/SecondaryButton';
 
 function App() {
   return (
@@ -25,10 +26,10 @@ function App() {
             {/* Put your components in here */}
             {/* I gave the containers an arbitrary width to illustrate the framed buttons taking up 100% of parent */}
             <Box my={2} sx={{ width: '300px' }}>
-              <PrimaryButton>CTA Copy Area</PrimaryButton>
+              <PrimaryButton>Primary Button</PrimaryButton>
             </Box>
-            <Box my={2}>
-              <Button>Example Button</Button>
+            <Box my={2} sx={{ width: '300px' }}>
+              <SecondaryButton>Secondary Button</SecondaryButton>
             </Box>
           </Frame>
         </Flex>
