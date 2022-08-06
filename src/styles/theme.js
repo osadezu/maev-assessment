@@ -34,6 +34,7 @@ export const buttonTheme = {
     fontSize: [tokens.typography.fontSizes[2], tokens.typography.fontSizes[3]],
     border: `1px solid ${tokens.colors.backgroundSecondary}`,
     borderRadius: '0px',
+    height: '60px',
     '&:not(:disabled)': {
       '&:hover': {
         bg: tokens.colors.accent02,
@@ -56,6 +57,7 @@ export const buttonTheme = {
     color: tokens.colors.textPrimary,
     fontFamily: tokens.typography.fonts.headingPrimary,
     fontSize: [tokens.typography.fontSizes[2], tokens.typography.fontSizes[3]],
+    height: '60px',
     '&:hover': {
       bg: tokens.colors.accent02,
       border: `1px solid ${tokens.colors.textSecondary}`,
