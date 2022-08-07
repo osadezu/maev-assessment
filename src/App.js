@@ -7,13 +7,36 @@ import { PrimaryButton } from './components/buttons/PrimaryButton';
 import { SecondaryButton } from './components/buttons/SecondaryButton';
 import { TertiaryButton } from './components/buttons/TertiaryButton';
 import { AddToCartButton } from './components/buttons/AddToCartButton';
+import { useState } from 'react';
 
 function App() {
-  // Placeholder data to test Add To Cart button
+  // Placeholder data for demo
   const sampleItem = {
+    id: 'XYZ123',
     price: 149.0,
     periodWeeks: 4,
   };
+
+  // Dummy cart state for demo
+  const cartStates = ['Ready', 'Adding', 'Added'];
+  const [cartState, setCartState] = useState(0);
+
+  // Dummy add to cart handler for demo
+  const handleAddToCart = (e, item) => {
+    console.log(e.target);
+    console.log(`Item added to cart: ${item.id}`);
+    setCartState(1);
+
+    // BAD! for demo only
+    setTimeout(() => {
+      setCartState(2);
+      setTimeout(() => {
+        setCartState(0);
+      }, 1000);
+    }, 1500);
+  };
+
+  console.log(cartStates[cartState]);
 
   return (
     <ThemeProvider theme={theme}>
@@ -42,8 +65,12 @@ function App() {
             <Box my={3} sx={{ width: '300px', textAlign: 'center' }}>
               <TertiaryButton>See Details</TertiaryButton>
             </Box>
-            <Box my={2} sx={{ width: '450px' }}>
-              <AddToCartButton item={sampleItem} />
+            <Box my={2} sx={{ width: '360px' }}>
+              <AddToCartButton
+                item={sampleItem}
+                cartState={cartState}
+                handleAddToCart={handleAddToCart}
+              />
             </Box>
           </Frame>
         </Flex>

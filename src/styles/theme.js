@@ -47,7 +47,7 @@ export const buttonTheme = {
     },
     '&:disabled': {
       bg: 'grey',
-      cursor: 'default',
+      cursor: 'not-allowed',
       color: 'initial',
     },
   },
@@ -84,6 +84,13 @@ export const buttonTheme = {
         cursor: 'pointer',
       },
     },
+  },
+  activeCart: {
+    bg: tokens.colors.accent02,
+    border: `1px solid ${tokens.colors.backgroundPrimary}`,
+    color: tokens.colors.textSecondary,
+    fontSize: [tokens.typography.fontSizes[2], tokens.typography.fontSizes[3]],
+    cursor: 'not-allowed',
   },
   tabs: {
     variant: 'buttons.tertiary',
