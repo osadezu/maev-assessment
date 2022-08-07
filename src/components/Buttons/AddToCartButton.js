@@ -40,7 +40,7 @@ export const AddToCartButton = ({ item, cartState, handleAddToCart }) => {
 
   return (
     <Button
-      onClick={(e) => handleAddToCart(e, buttonState.item)}
+      onClick={() => handleAddToCart(buttonState.item)}
       disabled={!buttonState.enabled}
       sx={{
         ...stateStyle,

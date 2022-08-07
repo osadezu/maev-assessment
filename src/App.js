@@ -22,8 +22,7 @@ function App() {
   const [cartState, setCartState] = useState(0);
 
   // Dummy add to cart handler for demo
-  const handleAddToCart = (e, item) => {
-    console.log(e.target);
+  const handleAddToCart = (item) => {
     console.log(`Item added to cart: ${item.id}`);
     setCartState(1);
 
