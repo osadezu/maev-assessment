@@ -68,7 +68,9 @@ export const buttonTheme = {
   tertiary: {
     border: 0,
     borderRadius: '0',
-    padding: 'unset',
+    // This workaround might be avoided after clarification on design intent
+    padding: 'unset', // Remove default theme padding
+    pb: '2px', // But leave enough to keep Safari from clipping underline
     bg: tokens.colors.backgroundPrimary,
     color: tokens.colors.textPrimary,
     textDecoration: 'underline',
